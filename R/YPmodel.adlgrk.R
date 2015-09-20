@@ -25,7 +25,7 @@ function(data=c(), Estimate=c(), ...)
 
 	Adlgrk <- list(pval=pval)
 
-	class(Adlgrk) <- "YPmodel"
+	class(Adlgrk) <- "YPmodel.adlgrk"
 	Adlgrk$call <- match.call()
 
 	return(Adlgrk)

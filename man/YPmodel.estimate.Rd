@@ -20,7 +20,7 @@ The main function to fit the short-term and long-term hazard ration model.
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{\dots}{ For S4 method only. }
-  \item{data}{ A properly qualified filename where text data is to be saved, or a dataframe of input data set with three vectors: the event / censoring time (unite: year), the censoring indicator, and the group membership indicator. See the structure of sample data set \code{\link{gastric}} for instance.} 
+  \item{data}{ A properly qualified filename where text data is to be saved, or a dataframe of input data set with three vectors: the event / censoring time (unite: year), the censoring indicator, and the group membership indicator. See the structure of sample data set \code{\link{gastric}} for instance.}
   \item{startPoint}{ Start point for estimating \eqn{\hat{\beta}}. }
   \item{nm}{The upper boundary for the absolute value of \eqn{\hat{\beta}}, and the default value is \eqn{\log(100)}.  }
   \item{maxIter1}{ Parameter of out-cycle iteration numbers. }
@@ -37,7 +37,7 @@ The main function to fit the short-term and long-term hazard ration model.
     \item{variance.beta2}{ Variance of the second variable of \eqn{\hat{\beta}}. }
 }
 \references{
-YANG, S. AND PRENTICE, R. L. (2005). Semiparametric analysis of short-term and long-term hazard ratios with two-sample survival data. Biometrika 92, 1-17.  
+YANG, S. AND PRENTICE, R. L. (2005). Semiparametric analysis of short-term and long-term hazard ratios with two-sample survival data. Biometrika 92, 1-17.
 }
 \author{
 Junlong Sun and Song Yang
@@ -58,9 +58,9 @@ Junlong Sun and Song Yang
 
     Estimate <- YPmodel.estimate(data=gastric, maxIter1=50, maxIter2=20)
 
-    summary.YPmodel.estimate(Estimate)
+    summary(Estimate)
 
-    plot.YPmodel.survivor(Estimate)
+    plot(Estimate)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -1,6 +1,6 @@
 YPmodel.estimate <-
-function(data=c(), startPoint=c(0,0), nm=log(100), maxIter1=50, maxIter2=20, interval=1, Internal=c(), ...) 
-{	
+function(data=c(), startPoint=c(0,0), nm=log(100), maxIter1=50, maxIter2=20, interval=1, Internal=c(), ...)
+{
 
 	if(is.null(data)){
 		stop(paste(fun.errorMessage('DataSet')))
@@ -44,14 +44,14 @@ function(data=c(), startPoint=c(0,0), nm=log(100), maxIter1=50, maxIter2=20, int
 
 	#-----------------------------------------------------------------#
 	while ((sum(abs(round(1000*ob) - round(1000*nb)))>0) & (numIteration < maxIteration1) ) {
-	    
+
 	    numIteration <- numIteration + 1
 	    t <- 1
 	    bc <- t(nb) + t*po
 	    idb <- sum((bc > nm) + (bc < -nm))
-	    
+
 		numIterationInner<- 0
-	    
+
 	   #-----------------------------------------------------------------#
 	   while ((idb > 0) & (numIterationInner < maxIteration2)){
 	        numIterationInner<- numIterationInner + 1
@@ -63,14 +63,14 @@ function(data=c(), startPoint=c(0,0), nm=log(100), maxIter1=50, maxIter2=20, int
 
 	    m1 <- 1
 	    b <- bc
-	    
+
 	   ##return [s,ru]
 	   #data4 <- fun.ntitr(b,Z,Delta,n,m1)
 	   #s <- data4$s
 	   #ru <- data4$ru
 
 		data4 <- fun.oldp2(b,1,Data)
-		s <- data4$s	
+		s <- data4$s
 		ru <- data4$ru
 
 	    if (of==0){
@@ -78,7 +78,7 @@ function(data=c(), startPoint=c(0,0), nm=log(100), maxIter1=50, maxIter2=20, int
 	    } else if (abs((s/of-1)*1.e+8)<1){
 	        break
 	    }
-	    
+
 	    ob <- nb
 	    nb <- t(bc)
 	    of <- s
@@ -106,7 +106,7 @@ function(data=c(), startPoint=c(0,0), nm=log(100), maxIter1=50, maxIter2=20, int
 	data5 <- fun.oldp2(b,m,Data)
 	s <- data5$s
 	ru <- data5$ru
-	        
+
 	ots <- min(s)
 	jt <- which.min(s)
 	beta <- t(b[,jt])
@@ -136,21 +136,21 @@ function(data=c(), startPoint=c(0,0), nm=log(100), maxIter1=50, maxIter2=20, int
 		variance.beta2<-pq[1,2]
 
 	#-----------------------------------------------------------------#
-	## Output Resuts 
+	## Output Resuts
 	#-----------------------------------------------------------------#
 	    Estimate$variance.beta1 <- variance.beta1
 	    Estimate$variance.beta2 <- variance.beta2
 
-	    Estimate$Data <-Data  
+	    Estimate$Data <-Data
 	    Estimate$Parameters <- Parameters
 	    Estimate$interval <- interval
-	    
+
 	#-----------------------------------------------------------------#
 	}
 
-	class(Estimate) <- "YPmodel"
+	class(Estimate) <- "YPmodel.estimate"
 	Estimate$call <- match.call()
-	
+
 	return(Estimate)
 
 }

@@ -1,5 +1,5 @@
 YPmodel.IntervalBands <-
-function(data=c(), Internal=c(), Estimate=c(), ...) 
+function(data=c(), Internal=c(), Estimate=c(), ...)
 {
 
 
@@ -58,13 +58,13 @@ function(data=c(), Internal=c(), Estimate=c(), ...)
 	Result$low90 <- low90
 
 	IntervalBands <- Result
-	IntervalBands$Data <-Data  
+	IntervalBands$Data <-Data
 	IntervalBands$Estimate <- Estimate
 
-	class(IntervalBands) <- "YPmodel"
+	class(IntervalBands) <- "YPmodel.IntervalBands"
 	IntervalBands$call <- match.call()
 	#-----------------------------------------------------------------#
-	## Output Resuts 
+	## Output Resuts
 	#-----------------------------------------------------------------#
 	    return(IntervalBands)
 	#-----------------------------------------------------------------#
