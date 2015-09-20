@@ -1,0 +1,6 @@
+library(YPmodel)
+data(gastric)
+Estimate <- YPmodel.estimate(data=gastric)
+IntervalBands <- YPmodel.IntervalBands(data=gastric, Estimate=Estimate) 
+LackFitTest <- YPmodel.lackfittest(data=gastric)
+Adlgrk <- YPmodel.adlgrk(data=gastric)

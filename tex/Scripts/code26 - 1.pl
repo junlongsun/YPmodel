@@ -1,0 +1,2 @@
+summary(result)
+plot(result)
