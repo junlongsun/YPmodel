@@ -2,11 +2,17 @@ plot.YPmodel.survf <-
 function(x, Internal=c(), ...)
 {
 
+
+
 	Data <- x$Data
 	rTestData <- x$rTestData
 	Estimate <- x$Estimate
 
 	LackFitTest <- x
+	
+	if(is.null(Data)){
+		stop(paste(fun.errorMessage('DataSet')))
+	}
 
 	if(is.null(Internal)){
 		Internal <- fun.internalParameters(Data=Data, Estimate=Estimate)
@@ -27,5 +33,5 @@ function(x, Internal=c(), ...)
 	lines(X[1:kk]*365,obs2[1:kk],"l",col="blue",lwd=2)
 	title(main="Plots of the contrast-based test statistic \r\n and randomly selected realizations of the process")
 
-	
+
 }

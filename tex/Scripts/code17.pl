@@ -1,0 +1,1 @@
+plot.YPmodel.IntervalBands(IntervalBands)

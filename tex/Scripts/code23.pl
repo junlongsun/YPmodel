@@ -1,0 +1,1 @@
+summary.YPmodel.lackfittest(LackFitTest)

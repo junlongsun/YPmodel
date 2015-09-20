@@ -1,5 +1,5 @@
 YPmodel.lackfittest <-
-function(data=c(), repNum=1000, Internal=c(), ...) 
+function(data=c(), repNum=1000, Internal=c(), ...)
 {
 	if(is.null(data)){
 		stop(paste(fun.errorMessage('DataSet')))
@@ -61,7 +61,7 @@ function(data=c(), repNum=1000, Internal=c(), ...)
 	LackFitTest$rTestData <- rTestData
 	LackFitTest$Estimate <- Estimate
 
-	class(LackFitTest) <- "YPmodel"
+	class(LackFitTest) <- "YPmodel.lackfittest"
 	LackFitTest$call <- match.call()
 
 	return(LackFitTest)

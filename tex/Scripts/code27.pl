@@ -1,0 +1,1 @@
+result <- YPmodel('SampleData.txt')
