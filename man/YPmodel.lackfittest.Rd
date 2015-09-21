@@ -3,6 +3,7 @@
 \alias{summary.YPmodel.lackfittest}
 \alias{plot.YPmodel.martint}
 \alias{plot.YPmodel.survf}
+\alias{plot.YPmodel.lackfittest}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~

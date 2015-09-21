@@ -1,0 +1,88 @@
+library(YPmodel)
+data(gastric)
+Estimate <- YPmodel.estimate(data=gastric, interval=1)
+Estimate
+~/Documents/Git/YPmodel/man/gastric.Rd
+library(YPmodel)    data(gastric)    result <- YPmodel(gastric, repNum=100)
+summary(result)
+plot(result)
+library ( YPmodel )data ( gastric )Estimate <- YPmodel . estimate ( data = gastric )
+library ( YPmodel )
+data ( gastric )
+Estimate <- YPmodel . estimate ( data = gastric )
+Estimate <- YPmodel.estimate ( data = gastric )
+Estimate
+Estimate$beta
+summary.YPmodel.estimate ( Estimate , interval =0)
+plot.YPmodel.survivor (Estimate)
+print 1
+print(1)
+print(Estimate)
+priint.YPmodel(Estimate)
+print.YPmodel(Estimate)
+summary.YPmodel.estimate(object=Estimate, interval=0)
+summary.YPmodel.overall(object=Data)
+IntervalBands <- YPmodel.IntervalBands ( data = gastric ,Estimate = Estimate )
+LackFitTest <- YPmodel.lackfittest ( data = gastric )
+Adlgrk <- YPmodel . adlgrk ( data = gastric )
+Adlgrk <- YPmodel.adlgrk ( data = gastric )
+Adlgrk
+gastric<-read.table('data.txt')
+package.skeleton(name="YPmodel", list=c("gastric","fun.adlgrk","fun.classCheck","fun.cumsum","fun.errorMessage","fun.flipud","fun.generateParameters","fun.hazardRationEstimation","fun.hcvxitr1","fun.internalParameters","fun.martint","fun.newBest","fun.ntitr0","fun.oldp2","fun.Rjudge","fun.survf","fun.variance","fun.YPmodelOriginal","fun.zeroORone","plot.YPmodel.detail","plot.YPmodel.IntervalBands","plot.YPmodel.martint","plot.YPmodel","plot.YPmodel.survf","plot.YPmodel.survivor","print.YPmodel","run.YPmodel","summary.YPmodel.adlgrk","summary.YPmodel.detail","summary.YPmodel.estimate","summary.YPmodel.IntervalBands","summary.YPmodel.lackfittest","summary.YPmodel.overall","summary.YPmodel","YPmodel.adlgrk","YPmodel.default","YPmodel.estimate","YPmodel.inputData","YPmodel.IntervalBands","YPmodel.lackfittest","YPmodel","YPmodel.setParameter","YPmodel.setRandom","plot.YPmodel.estimate","plot.YPmodel.lackfittest","plot.YPmodel.survf"))
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.estimate.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.lackfittest.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.survf.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/YPmodel.adlgrk.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/YPmodel.estimate.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/YPmodel.IntervalBands.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/YPmodel.lackfittest.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.adlgrk.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.classCheck.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.cumsum.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.errorMessage.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.flipud.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.generateParameters.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.hazardRationEstimation.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.hcvxitr1.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.internalParameters.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.martint.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.newBest.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/fun.ntitr0.R'${19:, chdir = ${20:TRUE}})
+source('~/Documents/Git/YPmodel/R/fun.cumsum.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.errorMessage.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.flipud.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.generateParameters.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.hazardRationEstimation.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.hcvxitr1.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.internalParameters.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.martint.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.newBest.R', chdir = TRUE)
+source('~/Documents/Git/YPmodel/R/fun.ntitr0.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.oldp2.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.Rjudge.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.survf.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.variance.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.YPmodelOriginal.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/fun.zeroORone.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.IntervalBands.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.martint.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.survivor.R'${19:, chdir = ${20:TRUE}})#
+source('~/Documents/Git/YPmodel/R/print.YPmodel.R'${19:, chdir = ${20:TRUE}})
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/plot.YPmodel.survivor.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/print.YPmodel.R', chdir = TRUE)
+source('~/Documents/Git/YPmodel/R/summary.YPmodel.adlgrk.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/summary.YPmodel.estimate.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/summary.YPmodel.IntervalBands.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/summary.YPmodel.lackfittest.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/summary.YPmodel.overall.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/summary.YPmodel.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/YPmodel.default.R', chdir = TRUE)
+source('~/Documents/Git/YPmodel/R/YPmodel.inputData.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/YPmodel.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/YPmodel.setParameter.R', chdir = TRUE)#
+source('~/Documents/Git/YPmodel/R/YPmodel.setRandom.R', chdir = TRUE)
+package.skeleton(name="YPmodel", list=c("gastric","fun.adlgrk","fun.classCheck","fun.cumsum","fun.errorMessage","fun.flipud","fun.generateParameters","fun.hazardRationEstimation","fun.hcvxitr1","fun.internalParameters","fun.martint","fun.newBest","fun.ntitr0","fun.oldp2","fun.Rjudge","fun.survf","fun.variance","fun.YPmodelOriginal","fun.zeroORone","plot.YPmodel.detail","plot.YPmodel.IntervalBands","plot.YPmodel.martint","plot.YPmodel","plot.YPmodel.survf","plot.YPmodel.survivor","print.YPmodel","run.YPmodel","summary.YPmodel.adlgrk","summary.YPmodel.detail","summary.YPmodel.estimate","summary.YPmodel.IntervalBands","summary.YPmodel.lackfittest","summary.YPmodel.overall","summary.YPmodel","YPmodel.adlgrk","YPmodel.default","YPmodel.estimate","YPmodel.inputData","YPmodel.IntervalBands","YPmodel.lackfittest","YPmodel","YPmodel.setParameter","YPmodel.setRandom","plot.YPmodel.estimate","plot.YPmodel.lackfittest","plot.YPmodel.survf"))
+source('~/Documents/Git/YPmodel/R/fun.adlgrk.R', chdir = TRUE)
+package.skeleton(name="YPmodel", list=c("gastric","fun.adlgrk","fun.classCheck","fun.cumsum","fun.errorMessage","fun.flipud","fun.generateParameters","fun.hazardRationEstimation","fun.hcvxitr1","fun.internalParameters","fun.martint","fun.newBest","fun.ntitr0","fun.oldp2","fun.Rjudge","fun.survf","fun.variance","fun.YPmodelOriginal","fun.zeroORone","plot.YPmodel.IntervalBands","plot.YPmodel.martint","plot.YPmodel","plot.YPmodel.survf","plot.YPmodel.survivor","print.YPmodel","summary.YPmodel.adlgrk","summary.YPmodel.estimate","summary.YPmodel.IntervalBands","summary.YPmodel.lackfittest","summary.YPmodel.overall","summary.YPmodel","YPmodel.adlgrk","YPmodel.default","YPmodel.estimate","YPmodel.inputData","YPmodel.IntervalBands","YPmodel.lackfittest","YPmodel","YPmodel.setParameter","YPmodel.setRandom","plot.YPmodel.estimate","plot.YPmodel.lackfittest","plot.YPmodel.survf"))

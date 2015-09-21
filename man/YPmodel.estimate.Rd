@@ -2,6 +2,7 @@
 \alias{YPmodel.estimate}
 \alias{summary.YPmodel.estimate}
 \alias{plot.YPmodel.survivor}
+\alias{plot.YPmodel.estimate}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
