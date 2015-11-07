@@ -22,7 +22,7 @@ function(x=c(), Internal=c(), ...)
 
 	dev.new()
 
-	plot(X[1:kk]*365,wtildCount1[,1],"l",lty = "dotted",col="red",xlab="Days", ylab="p-value",xlim=c(1, max(X*365)),ylim=c(min(obs,wtildCount1), max(obs,wtildCount1)))
+	plot(X[1:kk]*365,wtildCount1[,1],"l",lty = "dotted",col="red",xlab="Days",xlim=c(1, max(X*365)),ylim=c(min(obs,wtildCount1), max(obs,wtildCount1)))
 	for(i in 2:lineCount1){
 	    lines(X[1:kk]*365,wtildCount1[,i],"l",lty = "dotted",col="red")
 	}
