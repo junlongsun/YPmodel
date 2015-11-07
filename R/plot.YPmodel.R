@@ -9,6 +9,7 @@ function(x, ...)
 	LackFitTest <- YPmodelResult$LackFitTest
 	Estimate <- YPmodelResult$Estimate
 
+	par(mfrow=c(2,2))
 	plot.YPmodel.survivor(Estimate)
 	plot.YPmodel.IntervalBands(IntervalBands)
 	plot.YPmodel.survf(LackFitTest)

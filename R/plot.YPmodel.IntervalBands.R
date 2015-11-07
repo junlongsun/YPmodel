@@ -47,7 +47,7 @@ Delta <- Data$Delta
 
 ylimMax=max(upp22[ld2:ud2],upp3[ld2:ud2],hr[ld2:ud2],upp90[ld2:ud2])
 
-dev.new()
+#dev.new()
 
 #plot(X[ld2:ud2]*365,upp22[ld2:ud2],"l",col="blue",xlab="Days", ylab="Hazard ratio",ylim=c(0, ylimMax))
 #lines(X[ld2:ud2]*365,low22[ld2:ud2],"l",col="blue")
@@ -56,7 +56,7 @@ dev.new()
 #lines(X[ld2:ud2]*365,hr[ld2:ud2],"l",col="green",lty=3)
 #lines(X[ld2:ud2]*365,upp90[ld2:ud2],"l",col="cyan")
 #lines(X[ld2:ud2]*365,low90[ld2:ud2],"l",col="cyan")
-#legend("topright", c("Estimated hazard ratio function","Pointwise confidence limits","95% EQ confidence bands","90% EQ confidence bands"),lty=c(3,3,1,1),col=c("green","magenta","blue","cyan")) 
+#legend("topright", c("Estimated hazard ratio function","Pointwise confidence limits","95% EQ confidence bands","90% EQ confidence bands"),lty=c(3,3,1,1),col=c("green","magenta","blue","cyan"))
 #title(main="Confidence intervals and bands of the hazard ration")
 
 plot(X[ld2:ud2]*365,upp22[ld2:ud2],"l",col="blue",xlab="Days", ylab="Hazard ratio",ylim=c(0, ylimMax), lwd=1.5)
@@ -66,7 +66,7 @@ lines(X[ld2:ud2]*365,low3[ld2:ud2],"l",col="magenta",lty=2, lwd=1.5)
 lines(X[ld2:ud2]*365,hr[ld2:ud2],"l",col="green",lty=2, lwd=1.5)
 #lines(X[ld2:ud2]*365,upp90[ld2:ud2],"l",col="cyan")
 #lines(X[ld2:ud2]*365,low90[ld2:ud2],"l",col="cyan")
-legend("topright", c("Estimated hazard ratio function","Pointwise confidence limits","95% EQ confidence bands"),lty=c(2,2,1),col=c("green","magenta","blue")) 
+legend("topright", c("Estimated hazard ratio function","Pointwise confidence limits","95% EQ confidence bands"),lty=c(2,2,1),col=c("green","magenta","blue"))
 title(main="Confidence intervals and bands of the hazard ration")
 
 

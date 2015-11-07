@@ -2,7 +2,7 @@ summary.YPmodel <-
 function(object, ...)
 {
 	YPmodelResult <- object
-	
+
 	Data <- YPmodelResult$Data
 	Estimate <- YPmodelResult$Estimate
 	IntervalBands <- YPmodelResult$IntervalBands
@@ -17,6 +17,6 @@ summary.YPmodel.lackfittest(LackFitTest)
 summary.YPmodel.adlgrk(Adlgrk)
 cat("\n-------------------------------------------------------------------------------------------------------------  \n")
 
-plot.YPmodel(YPmodelResult)
+#plot.YPmodel(YPmodelResult)
 
 }
