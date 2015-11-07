@@ -1,1 +1,0 @@
-summary.YPmodel.IntervalBands(IntervalBands)

@@ -1,1 +1,0 @@
-plot.YPmodel.survivor(Estimate)

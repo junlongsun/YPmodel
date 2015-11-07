@@ -1,1 +1,0 @@
-browseVignettes(package = "YPmodel")
