@@ -14,19 +14,19 @@ function(object=c(), ...)
 
 	colnames(Beta) <- c("Beta_1","Beta_2")
 	rownames(Beta) <- c("estimates")
-	BetaInterval <- matrix(c(beta[1,1]-1.96*(variance.beta1/sqrt(n)),	
+	BetaInterval <- matrix(c(beta[1,1]-1.96*(variance.beta1/sqrt(n)),
 		beta[1,2]-1.96*(variance.beta2/sqrt(n)),
 		beta[1,1]+1.96*(variance.beta1/sqrt(n)),
 		beta[1,2]+1.96*(variance.beta2/sqrt(n))
 		), nrow=2, ncol=2)
-	colnames(BetaInterval) <- c("Upper bound","Lower bound")
+	colnames(BetaInterval) <- c("Lower bound", "Upper bound")
 	rownames(BetaInterval) <- c("Beta_1","Beta_2")
 
 	Theta <- matrix(exp(beta), nrow=1, ncol=2)
 	colnames(Theta) <- c("Theta_1","Theta_2")
 	rownames(Theta) <- c("estimates")
 	ThetaInterval<- exp(BetaInterval)
-	colnames(ThetaInterval) <- c("Upper bound","Lower bound")
+	colnames(ThetaInterval) <- c("Lower bound", "Upper bound")
 	rownames(ThetaInterval) <- c("Theta_1","Theta_2")
 
 
