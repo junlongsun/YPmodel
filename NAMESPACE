@@ -21,3 +21,7 @@ S3method(summary, YPmodel.overall)
 S3method(summary, YPmodel.adlgrk)
 S3method(summary, YPmodel.estimate)
 S3method(summary, YPmodel.lackfittest)
+importFrom("graphics", "legend", "lines", "par", "plot", "title")
+importFrom("stats", "integrate", "pnorm", "printCoefmat", "rnorm",
+            "runif")
+importFrom("utils", "read.table")
