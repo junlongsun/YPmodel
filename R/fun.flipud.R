@@ -4,19 +4,20 @@ function(data)
 #fun.flipud(matrix)
 #Culculate flipud, return same results as Matlab
 #######################################################
-# version 0.1
-# Jul 19, 2012
+# version 0.2
+# Oct 15, 2020
 # Junlong Sun
 # return [Output]
 #######################################################
 # Jul 19, 2012 - v0.1 Create
+# Oct 15, 2020 - v0.2 Fix warning mesg, change check class(data) condiction
 #######################################################
 {
 #-----------------------------------------------------------------#
 ## Initilization
 #-----------------------------------------------------------------#
 	
-	if(class(data)!='matrix'){
+	if(class(data)[1]!='matrix' || class(data)[2]!='array'){
 		data<- matrix(data, nrow=length(data), ncol=1)
 	}
 	size <- dim(data)

@@ -3,12 +3,13 @@ function(best, r, Data)
 ########################################################
 #fun.adlgrk(bt,ru,fb,Data)
 #######################################################
-# version 0.1
-# Jul 17, 2012
+# version 0.2
+# Oct 15, 2020
 # Junlong Sun
 # return [Output]
 #######################################################
 # May 17, 2012 - v0.1 Create
+# Oct 15, 2020 - v0.2 Fix warning mesg, for function inside, change ro to as.numeric(ro)
 #######################################################
 {
 #-----------------------------------------------------------------#
@@ -84,9 +85,10 @@ erf <- function(x) {2 * pnorm(x * sqrt(2)) - 1}
 #norden <- function(x) {exp(-x^2/2)/sqrt(2*pi)}
 #fir <- function(x) {.5+.5*erf((t-th2-ro*x)/sqrt(2*(1-ro^2)))}
 #sec <- function(x) {.5+.5*erf((-t-th2-ro*x)/sqrt(2*(1-ro^2)))}
-Maxnor <- function(x) {( (.5+.5*erf((t-th2-ro*x)/sqrt(2*(1-ro^2)))) - (.5+.5*erf((-t-th2-ro*x)/sqrt(2*(1-ro^2)))) ) * (exp(-x^2/2)/sqrt(2*pi))}
+# Maxnor <- function(x) {( (.5+.5*erf((t-th2-ro*x)/sqrt(2*(1-ro^2)))) - (.5+.5*erf((-t-th2-ro*x)/sqrt(2*(1-ro^2)))) ) * (exp(-x^2/2)/sqrt(2*pi))}
+Maxnor1 <- function(x) {( (.5+.5*erf((t-th2-as.numeric(ro)*x)/sqrt(2*(1-as.numeric(ro)^2)))) - (.5+.5*erf((-t-th2-as.numeric(ro)*x)/sqrt(2*(1-as.numeric(ro)^2)))) ) * (exp(-x^2/2)/sqrt(2*pi))}
 
-qTemp <-integrate(Maxnor, lower = -t, upper = t)
+qTemp <-integrate(Maxnor1, lower = -t, upper = t)
 q <- qTemp$value
 pval <- 1-q
 
